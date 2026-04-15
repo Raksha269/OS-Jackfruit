@@ -131,8 +131,8 @@ sudo dmesg | tail
 
 ### Examples
 ```bash
-sudo ./engine start c6 rootfs "/cpu_hog 30" --nice 10
-sudo ./engine start c7 rootfs "/cpu_hog 30" --nice -5
+sudo nice -n -5 ./cpu
+sudo nice -n 10 ./cpu
 top
 ```
 
